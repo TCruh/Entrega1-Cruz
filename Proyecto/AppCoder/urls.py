@@ -1,5 +1,5 @@
 from django.urls import path
-from views import Template
+from AppCoder import views
 urlpatterns = [
-    path('',Template,name= 'Inicio' ),
+    path('',views.Template,name= 'Inicio' ),
 ]
