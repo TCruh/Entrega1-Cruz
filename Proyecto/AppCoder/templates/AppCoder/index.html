@@ -19,7 +19,7 @@
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>Pantuflas</title>
+    <title>Barrio Buena Vista</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i&display=swap" rel="stylesheet">
@@ -49,7 +49,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
 
         <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <a class="navbar-brand logo-text page-scroll" href="index.html">Barrio</a> 
+        <a class="navbar-brand logo-text page-scroll" href="index.html">Barrio Buena Vista</a> 
 
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,15 +61,15 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#register">REGISTER <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="#register">REGISTRARSE <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#description">DETAILS</a>
+                    <a class="nav-link page-scroll" href="#description">DETALLES</a>
                 </li>
 
                 <!-- Dropdown Menu -->          
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#date" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DATE</a>
+                    <a class="nav-link dropdown-toggle page-scroll" href="#date" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">RELGAS DE LA PAGINA</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{% static 'AppCoder/article-details.html' %}"><span class="item-text">ARTICLE DETAILS</span></a>
                         <div class="dropdown-divider"></div>
@@ -81,7 +81,7 @@
                 <!-- end of dropdown menu -->
 
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                    <a class="nav-link page-scroll" href="#contact">CONTACTO</a>
                 </li>
             </ul>
             <span class="nav-item social-icons">
@@ -109,19 +109,16 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-container">
-                        <div class="countdown">
-                            <span id="clock"></span>
-                        </div>
-                        <h1>Holaaa</h1>
-                        <p class="p-large">Do you feel like you're doing a lot of guess work when it comes to SEO for your website? Take the SEO training course to change that</p>
-                        <a class="btn-solid-lg page-scroll" href="#register">REGISTER</a>
-                        <a class="btn-outline-lg page-scroll" href="#instructor">DISCOVER</a>
+                        <h1>Barrio Buena Vista</h1>
+                        <p class="p-large">Pagina comunitaria para residentes o inquilinos del Barrio de Yerba Buena, Tucuman</p>
+                        <a class="btn-solid-lg page-scroll" href="#register">INGRESAR</a>
+                        <a class="btn-outline-lg page-scroll" href="#instructor">REGISTRARME</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
         
-        {% comment %} <!-- Image Slider -->
+        <!-- Image Slider -->
         <div class="outer-container">
             <div class="slider-container">
                 <div class="swiper-container image-slider-1">
@@ -155,13 +152,13 @@
                 </div> <!-- end of swiper-container -->
             </div> <!-- end of slider-container -->
         </div> <!-- end of outer-container -->
-        <!-- end of image slider --> {% endcomment %}
+        <!-- end of image slider -->
 
     </header> <!-- end of header -->
     <!-- end of header -->
 
 
-    <!-- Registration -->
+    {% comment %} <!-- Registration -->
     <div id="register" class="form-1">
         <div class="container">
             <div class="row">
@@ -223,11 +220,11 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of form-1 -->
-    <!-- end of registration -->
+    <!-- end of registration --> {% endcomment %}
 
 
    
-    <!-- Details Lightbox -->
+    {% comment %} <!-- Details Lightbox -->
 	<div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="container">
             <div class="row">
@@ -267,10 +264,10 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox -->
+    <!-- end of details lightbox --> {% endcomment %}
 
 
-    <!-- Video -->
+    {% comment %} <!-- Video -->
     <div class="basic-4">
         <div class="container">
             <div class="row">
@@ -294,10 +291,10 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-4 -->
-    <!-- end of video -->
+    <!-- end of video --> {% endcomment %}
 
 
-    <!-- Takeaways -->
+    {% comment %} <!-- Takeaways -->
     <div class="cards">
         <div class="container">
             <div class="row">
@@ -387,10 +384,10 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of cards -->
-    <!-- end of takeaways -->
+    <!-- end of takeaways --> {% endcomment %}
 
 
-<!-- Testimonials -->
+{% comment %} <!-- Testimonials -->
     <div class="slider-2">
         <div class="container">
             <div class="row">
@@ -465,10 +462,10 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of slider-2 -->
-    <!-- end of testimonials -->
+    <!-- end of testimonials --> {% endcomment %}
 
 
-    <!-- Date -->
+    {% comment %} <!-- Date -->
     <div id="date" class="basic-5">
         <div class="container">
             <div class="row">
@@ -482,7 +479,7 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-5 -->
-    <!-- end of date -->
+    <!-- end of date --> {% endcomment %}
 
     <!-- Contact se queda -->
     <div id="contact" class="form-3">
@@ -496,7 +493,7 @@
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <div class="media-body">[direccion], [ciudad], [pais]</div>
+                                <div class="media-body">Salta 1050,&nbsp; Yerba Buena,&nbsp; Tucuman,&nbsp; Argentina</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-mobile-alt"></i>
@@ -559,7 +556,14 @@
                             • Diseño y Desarrollo de plantilla: &ensp;Sergey Pozhilov <p><i class="fas fa-globe"></i> &nbsp;http://pozhilov.com</p>
                         </p>
                         <p>
-                            • Mas plantillas por Sergey: <i class="fas fa-globe"></i>&nbsp; http://gettemplate.com
+                            • Mas plantillas por Sergey: <p><i class="fas fa-globe"></i> &nbsp;http://gettemplate.com</p>
+                        </p>
+                    </div>
+                    <div>
+                        <h5>Autor de la pagina</h5>
+                        <p class="p-small">
+                            Tomas Segundo Cruz<br>
+                            <p><i class="fas fa-mobile-alt"></i>&ensp; +54&nbsp;-&nbsp;381&nbsp;56&nbsp;48&nbsp;917</p>
                         </p>
                     </div>
                 </div> <!-- end of col -->
