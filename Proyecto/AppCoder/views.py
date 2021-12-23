@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, request
 from django.template import loader,context
 # Create your views here.
 
@@ -8,15 +8,8 @@ def prueba(request):
 
 def Template(self):
     
-    nombre = 'Pepe'
-    apellido = 'Saltarin'
-    
-    mi_dict = {'key': 'value'}
-    
-    mis_datos = {'nombre': nombre, 'apellido': apellido, 'mi_dict': mi_dict, 'lista': [1,2,3,4,5,6]}
-    
-    plantilla = loader.get_template('C:/Tomas/Entrega/Proyecto/AppCoder/templates/AppCoder/Inicio.html')
+    plantilla = loader.get_template('AppCoder/index.html')
 
-    documento = plantilla.render(mis_datos)
+    documento = plantilla.render({})
 
     return HttpResponse(documento)

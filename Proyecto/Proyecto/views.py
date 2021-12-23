@@ -14,7 +14,7 @@ def Template(self):
     
     #Plantilla
     
-    plantilla = loader.get_template('template1.html')
+    plantilla = loader.get_template('index.html')
     
     documento = plantilla.render(datos)
     
